@@ -1,17 +1,17 @@
-import React from 'react';
-import { Navbar, Footer, Header, Products } from '../components';
-import './Home.css'
+import React from "react";
+import { Navbar, Footer, Header, Products } from "../components";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className="home">
       <Navbar />
       <Header />
-      <h1>PRODUCT OVERVIEW</h1>
+      <h4 className="header-title text-danger">Our Feature Product</h4>
       <Products />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

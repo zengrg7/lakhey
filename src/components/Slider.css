@@ -1,59 +1,93 @@
 .slider-container {
-    min-height: 84vh;
+  min-height: 84vh;
 }
-.nextSlide, .lastSlide {
-    display: none;
+.nextSlide,
+.lastSlide {
+  display: none;
 }
 .main-div {
-    display: flex;
-    min-width: 100vh;
-    height: 84vh;
+  display: flex;
+  min-width: 100vh;
+  height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: space-between;
 }
-.main-div > * {
-    width: 50%;
-}
+
 .contents {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.imagecontainer img{
-    height: 100%;
+.imagecontainer img {
+  height: 100vh;
+  background-size: cover;
 }
-.slider-btn-previous, .slider-btn-next {
-    position: absolute;
-    width: 1rem;
-    height: 84vh;
-    background-color: white;
-    border: none;
-}
+.slider-btn-previous,
 .slider-btn-next {
-    right: 0;
+  position: absolute;
+  width: 1rem;
+  height: 84vh;
+  background-color: transparent;
+  border: none;
 }
-.slider-btn-previous, .slider-btn-next :hover {
-    cursor: pointer;
+
+.slider-btn-previous {
+  left: 5vw;
+}
+
+.slider-btn-next {
+  right: 5vw;
+}
+
+.slider-btn-previous:before {
+  content: "\f137";
+  font-family: FontAwesome;
+  left: 5vw;
+  height: max-content;
+  width: max-content;
+}
+
+.slider-btn-previous:hover,
+.slider-btn-next:hover {
+  color: #dc3545;
+  height: max-content;
+  width: max-content;
+  transition: 0.1s ease-in-out;
+  font-size: 20px;
+}
+
+.slider-btn-next::before {
+  content: "\f138";
+  font-family: FontAwesome;
+  height: max-content;
+  width: max-content;
+  right: 5vw;
+}
+.slider-btn-previous,
+.slider-btn-next :hover {
+  cursor: pointer;
 }
 .shop-now {
-    border: 2px solid red;
-    color: red;
-    padding: 4px 8px;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: 1.2rem;
-    background-color: white;
+  border: 2px solid red;
+  color: red;
+  padding: 4px 8px;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 1.2rem;
+  background-color: white;
 }
 .shop-now:hover {
-    color: white;
-    background-color: red;
-    cursor: pointer;
+  color: white;
+  background-color: red;
+  cursor: pointer;
 }
 .title {
-    font-size: 26px;
-    margin: 10px 0;
+  font-size: 26px;
+  margin: 10px 0;
 }
 .subTitle {
-    font-size: 36px;
-    font-weight: 800;
-    margin:5px 0 20px 0;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 5px 0 20px 0;
 }
