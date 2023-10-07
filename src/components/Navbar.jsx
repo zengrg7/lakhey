@@ -17,7 +17,9 @@ const Navbar = () => {
         <div className="lakhey-navbar">
           <div className="lakhey-navbar-links">
             <div className="lakhey-navbar-links-logo">
-              <img src={logo} alt="logo" width={20} height={20} />
+              <NavLink to="/" className={activePage}>
+                <img src={logo} alt="logo" width={20} height={20} />
+              </NavLink>
             </div>
             <div className="lakhey-navbar-links-container">
               <p>

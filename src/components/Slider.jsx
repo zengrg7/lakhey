@@ -9,23 +9,23 @@ const Slider = () => {
   const [featured] = useState(data);
   const [index, setIndex] = useState(0);
 
-  // useEffect(() => {
-  //   let lastIndex = featured.length - 1;
-  //   if (index < 0) {
-  //     setIndex(lastIndex);
-  //   }
-  //   if (index > lastIndex) {
-  //     setIndex(0);
-  //   }
-  // }, [index, featured]);
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setIndex(index + 1);
-  //   }, 2000);
-  //   return () => {
-  //     clearInterval(slider);
-  //   };
-  // }, [index, featured]);
+  useEffect(() => {
+    let lastIndex = featured.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, featured]);
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 2000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index, featured]);
 
   const prevContent = () => {
     setIndex(index - 1);
