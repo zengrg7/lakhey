@@ -1,5 +1,5 @@
 .slider-container {
-  min-height: 84vh;
+  height: calc(100vh - 80px);
 }
 .nextSlide,
 .lastSlide {
@@ -20,7 +20,7 @@
   align-items: center;
 }
 .imagecontainer img {
-  height: 80vh;
+  height: calc(100vh - 80px);
   background-size: cover;
 }
 .slider-btn-previous,
