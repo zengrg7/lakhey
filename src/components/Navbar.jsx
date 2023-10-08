@@ -15,34 +15,32 @@ const Navbar = () => {
     <div className="w-100 navbar">
       <Container>
         <div className="lakhey-navbar">
-          <div className="lakhey-navbar-links">
-            <div className="lakhey-navbar-links-logo">
+          <div className="lakhey-navbar-links-logo">
+            <NavLink to="/" className={activePage}>
+              <img src={logo} alt="logo" width={20} height={20} />
+            </NavLink>
+          </div>
+          <div className="lakhey-navbar-links-container">
+            <p>
               <NavLink to="/" className={activePage}>
-                <img src={logo} alt="logo" width={20} height={20} />
+                Home
               </NavLink>
-            </div>
-            <div className="lakhey-navbar-links-container">
-              <p>
-                <NavLink to="/" className={activePage}>
-                  Home
-                </NavLink>
-              </p>
-              <p>
-                <NavLink to="/about" className={activePage}>
-                  About
-                </NavLink>
-              </p>
-              <p>
-                <NavLink to="/shop" className={activePage}>
-                  Shop
-                </NavLink>
-              </p>
-              <p>
-                <NavLink to="/contact" className={activePage}>
-                  Contact
-                </NavLink>
-              </p>
-            </div>
+            </p>
+            <p>
+              <NavLink to="/about" className={activePage}>
+                About
+              </NavLink>
+            </p>
+            <p>
+              <NavLink to="/shop" className={activePage}>
+                Shop
+              </NavLink>
+            </p>
+            <p>
+              <NavLink to="/contact" className={activePage}>
+                Contact
+              </NavLink>
+            </p>
           </div>
           <div className="lakhey-navbar-sign d-flex gap-2">
             <Button variant="outline-danger">
