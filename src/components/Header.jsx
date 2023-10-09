@@ -5,7 +5,7 @@ import Slider from "./Slider";
 import { Col, Row } from "react-bootstrap";
 
 const Header = () => {
-  const title = "Style With Confidence";
+  const title = "Newly Arrived";
   return (
     <>
       <div className="header-container">
