@@ -4,6 +4,7 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 import "./Slider.css";
 import { Link } from "react-router-dom";
 import { Button, Container } from "react-bootstrap";
+import AOS from "aos";
 
 const Slider = () => {
   const [featured] = useState(data);
@@ -34,6 +35,10 @@ const Slider = () => {
     setIndex(index + 1);
   };
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div className="slider-container">
       {featured.map((item, indexFeatured) => {
@@ -61,10 +66,28 @@ const Slider = () => {
                   onClick={nextContent}
                 ></button>
                 <div className="contents">
-                  <p className="title">{content1}</p>
-                  <p className="subTitle">{content2}</p>
+                  <p
+                    className="title"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  >
+                    {content1}
+                  </p>
+                  <p
+                    className="subTitle"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    {content2}
+                  </p>
                   <Link to="/shop">
-                    <Button variant="danger">Shop Now</Button>
+                    <Button
+                      variant="danger"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    >
+                      Shop Now
+                    </Button>
                   </Link>
                 </div>
                 <div className="imagecontainer">

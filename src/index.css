@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700;800;900&display=swap");
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import "aos/dist/aos.css";
 
 :root {
   --font-family: "Manrope", sans-serif;
@@ -15,6 +16,10 @@
   --color-blog: #042c54;
   --color-text: #81afdd;
   --color-subtext: #ff8a71;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 p {
@@ -30,5 +35,5 @@ h4 {
 
 .header-title {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }

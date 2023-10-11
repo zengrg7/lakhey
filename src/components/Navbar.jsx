@@ -1,5 +1,5 @@
 // import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from "../assets/lakhey logo.png";
+import logo from "../assets/Images/lakhey logo.png";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Container } from "react-bootstrap";
@@ -43,12 +43,8 @@ const Navbar = () => {
             </p>
           </div>
           <div className="lakhey-navbar-sign d-flex gap-2">
-            <Button variant="outline-danger">
-              <i class="fa-solid fa-right-to-bracket me-2"></i>Sign Up
-            </Button>
-            <Button variant="danger">
-              <i class="fa-solid fa-circle-user me-2"></i>Sign In
-            </Button>
+            <Button variant="outline-danger sign-up">Sign Up</Button>
+            <Button variant="danger sign-in">Sign In</Button>
           </div>
         </div>
       </Container>

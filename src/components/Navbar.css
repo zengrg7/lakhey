@@ -1,71 +1,82 @@
 .navbar {
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
 
-    z-index: 2;
+  z-index: 2;
 }
 
 .lakhey-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    min-width: 100%;
-    background-color: white;
-    /* padding: 1.5rem 6rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  min-width: 100%;
+  background-color: white;
+  /* padding: 1.5rem 6rem; */
+}
+
+.lakhey-navbar a {
+  color: #6c757d;
+}
+
+.active-page {
+  color: #dc3545 !important;
+}
+
+.lakhey-navbar a:active {
+  color: #dc3545;
 }
 
 .lakhey-navbar-links {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .lakhey-navbar-links-logo {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .lakhey-navbar-links-logo img {
-    width: 4rem;
-    height: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .lakhey-navbar-links-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .lakhey-navbar-links-container p {
-    color: black;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
+  color: black;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
 
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 .lakhey-navbar-links-container p:hover {
-    color: rgba(255, 0, 0, .6);
-    cursor: pointer;
+  color: rgba(255, 0, 0, 0.6);
+  cursor: pointer;
 }
 .active-page {
-    font-weight: 800;
-    color: red;
+  font-weight: 800;
+  color: red;
 }
-.sign-btn {
-    border: 2px solid red;
-    color: red;
-    padding: 4px 8px;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: .8rem;
-    background-color: white;
-    margin-left: 1rem;
+
+.sign-in:before,
+.sign-up:before {
+  font-family: "FontAwesome";
+  margin-right: 5px;
 }
-.sign-btn:hover {
-    color: white;
-    background-color: red;
-    cursor: pointer;
+
+.sign-in:before {
+  content: "\f2bd";
+}
+
+.sign-up:before {
+  content: "\f090";
 }
